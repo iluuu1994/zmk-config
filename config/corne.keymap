@@ -10,6 +10,11 @@
 #include <../boards/shields/corne/boards/nice_nano.overlay>
 #include "keymap_swiss_de.h"
 
+#define DEF 0
+#define SYM 1
+#define NAV 2
+#define NUM 3
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -19,22 +24,30 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp CH_DIAE
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                 &mo 1 &kp LCTRL &kp LGUI    &kp BSPC &kp SPACE &mo 2
+                 &mo SYM &kp LCTRL &kp LGUI    &kp BSPC &kp SPACE &mo NAV
                         >;
                 };
-                lower_layer {
+                symbol_layer {
                         bindings = <
    &trans &kp CH_LBRC &kp CH_RBRC &kp CH_LABK &kp CH_RABK &kp CH_AT        &kp CH_GRV  &kp CH_LPRN &kp CH_RPRN &kp CH_LCBR &kp CH_RCBR &trans
    &trans &kp CH_PLUS &kp CH_AMPR &kp CH_SLSH &kp CH_ASTR &kp CH_TILD      &kp CH_QUOT &kp CH_DLR  &kp CH_EQL  &kp CH_EXLM &kp CH_QUES &trans
    &trans &kp CH_MINS &kp CH_PIPE &kp CH_BSLS &kp CH_HASH &kp CH_CIRC      &kp CH_DQUO &kp CH_PERC &kp CH_SCLN &kp CH_COLN &kp CH_UNDS &trans
-                        &trans &trans &trans      &trans &trans &trans
+                        &trans &trans &trans      &trans &trans &mo NUM
                         >;
                 };
-                raise_layer {
+                navigation_layer {
                         bindings = <
-   &trans &trans &trans &trans &trans &trans      &trans &kp PG_DN &kp PG_UP &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &trans &trans &trans &kp C_VOL_DN &kp C_VOL_UP &trans      &trans &kp PG_DN &kp PG_UP &trans &trans &trans
+   &trans &trans &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+                        &mo NUM &trans &trans      &trans &trans &trans
+                        >;
+                };
+                number_layer {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans      &trans &kp N7 &kp N8 &kp N9 &kp N0 &trans
+   &trans &trans &trans &trans &trans &trans      &trans &kp N4 &kp N5 &kp N6 &trans &trans
+   &trans &trans &trans &trans &trans &trans      &trans &kp N1 &kp N2 &kp N3 &trans &trans
                         &trans &trans &trans      &trans &trans &trans
                         >;
                 };
