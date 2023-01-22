@@ -16,40 +16,40 @@
 #define NUM 3
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-                default_layer {
-                        bindings = <
+        default_layer {
+            bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp CH_DIAE
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                  &mo SYM &mt LCTRL LGUI &mo NUM     &kp BSPC &kp SPACE &mo NAV
-                        >;
-                };
-                symbol_layer {
-                        bindings = <
+            >;
+        };
+        symbol_layer {
+            bindings = <
    &trans &kp CH_LBRC &kp CH_RBRC &kp CH_LABK &kp CH_RABK &kp CH_AT        &kp CH_GRAVE &kp CH_LPRN &kp CH_RPRN &kp CH_LCBR &kp CH_RCBR &trans
    &trans &kp CH_PLUS &kp CH_AMPR &kp CH_SLSH &kp CH_ASTR &kp CH_TILDE      &kp CH_QUOT &kp CH_DLR  &kp CH_EQL  &kp CH_EXLM &kp CH_QUES &trans
    &trans &kp CH_MINS &kp CH_PIPE &kp CH_BSLS &kp CH_HASH &kp CH_CARET      &kp CH_DQUO &kp CH_PERC &kp CH_SCLN &kp CH_COLN &kp CH_UNDS &trans
                         &trans &trans &trans      &trans &trans &mo NUM
-                        >;
-                };
-                navigation_layer {
-                        bindings = <
+            >;
+        };
+        navigation_layer {
+            bindings = <
    &trans &none &kp LC(RIGHT) &kp C_VOL_DN &kp C_VOL_UP &none      &none &kp PG_DN &kp PG_UP &kp HOME &kp END &trans
    &trans &none &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &none      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &trans
    &trans &none &none &none &none &kp LC(LEFT)      &none &none &none &none &none &trans
                         &mo NUM &trans &trans      &trans &trans &trans
-                        >;
-                };
-                number_layer {
-                        bindings = <
+            >;
+        };
+        number_layer {
+            bindings = <
    &trans &none &none &none &none &none      &none &kp N7 &kp N8 &kp N9 &none &trans
    &trans &none &none &none &none &none      &none &kp N4 &kp N5 &kp N6 &none &trans
    &trans &none &none &none &none &none      &none &kp N1 &kp N2 &kp N3 &none &trans
                         &trans &trans &trans      &trans &kp N0 &trans
-                        >;
-                };
+            >;
         };
+    };
 };
