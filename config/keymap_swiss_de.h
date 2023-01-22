@@ -40,7 +40,7 @@
 #define CH_9    N9    // 9
 #define CH_0    N0    // 0
 #define CH_QUOT MINUS // '
-#define CH_CARET PLUS // ^ (dead)
+#define CH_CARET EQUAL // ^ (dead)
 // Row 2
 #define CH_Q    Q    // Q
 #define CH_W    W    // W
