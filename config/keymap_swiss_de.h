@@ -40,7 +40,7 @@
 #define CH_9    N9    // 9
 #define CH_0    N0    // 0
 #define CH_QUOT MINUS // '
-#define CH_CIRC PLUS  // ^ (dead)
+#define CH_CARET PLUS // ^ (dead)
 // Row 2
 #define CH_Q    Q    // Q
 #define CH_W    W    // W
@@ -106,7 +106,7 @@
 #define CH_RPRN LS(CH_9)    // )
 #define CH_EQL  LS(CH_0)    // =
 #define CH_QUES LS(CH_QUOT) // ?
-#define CH_GRV  LS(CH_CIRC) // ` (dead)
+#define CH_GRAVE LS(CH_CARET) // ` (dead)
 // Row 2
 #define CH_EGRV LS(CH_UDIA) // è
 #define CH_EXLM LS(CH_DIAE) // !
@@ -141,7 +141,7 @@
 #define CH_PIPE RA(CH_7)    // |
 #define CH_CENT RA(CH_8)    // ¢
 #define CH_ACUT RA(CH_QUOT) // ´ (dead)
-#define CH_TILD RA(CH_CIRC) // ~ (dead)
+#define CH_TILDE RA(CH_CARET) // ~ (dead)
 // Row 2
 #define CH_EURO RA(CH_E)    // €
 #define CH_LBRC RA(CH_UDIA) // [

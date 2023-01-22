@@ -29,9 +29,9 @@
                 };
                 symbol_layer {
                         bindings = <
-   &trans &kp CH_LBRC &kp CH_RBRC &kp CH_LABK &kp CH_RABK &kp CH_AT        &kp CH_GRV  &kp CH_LPRN &kp CH_RPRN &kp CH_LCBR &kp CH_RCBR &trans
-   &trans &kp CH_PLUS &kp CH_AMPR &kp CH_SLSH &kp CH_ASTR &kp CH_TILD      &kp CH_QUOT &kp CH_DLR  &kp CH_EQL  &kp CH_EXLM &kp CH_QUES &trans
-   &trans &kp CH_MINS &kp CH_PIPE &kp CH_BSLS &kp CH_HASH &kp CH_CIRC      &kp CH_DQUO &kp CH_PERC &kp CH_SCLN &kp CH_COLN &kp CH_UNDS &trans
+   &trans &kp CH_LBRC &kp CH_RBRC &kp CH_LABK &kp CH_RABK &kp CH_AT        &kp CH_GRAVE &kp CH_LPRN &kp CH_RPRN &kp CH_LCBR &kp CH_RCBR &trans
+   &trans &kp CH_PLUS &kp CH_AMPR &kp CH_SLSH &kp CH_ASTR &kp CH_TILDE      &kp CH_QUOT &kp CH_DLR  &kp CH_EQL  &kp CH_EXLM &kp CH_QUES &trans
+   &trans &kp CH_MINS &kp CH_PIPE &kp CH_BSLS &kp CH_HASH &kp CH_CARET      &kp CH_DQUO &kp CH_PERC &kp CH_SCLN &kp CH_COLN &kp CH_UNDS &trans
                         &trans &trans &trans      &trans &trans &mo NUM
                         >;
                 };
